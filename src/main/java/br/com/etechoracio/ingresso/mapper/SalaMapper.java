@@ -1,8 +1,6 @@
 package br.com.etechoracio.ingresso.mapper;
 
-import br.com.etechoracio.ingresso.dto.SessaoSalaResponseDTO;
 import br.com.etechoracio.ingresso.dto.SalaResponseDTO;
-import br.com.etechoracio.ingresso.entity.Filme;
 import br.com.etechoracio.ingresso.entity.Sala;
 import org.mapstruct.Mapper;
 
@@ -14,6 +12,5 @@ public interface SalaMapper {
 
     List<SalaResponseDTO> toRespostaDTOList(List<Sala> entities);
 
-    SessaoSalaResponseDTO toSessoesResponseDTO(Filme entity);
-
+    SalaResponseDTO toResponseDTO(Sala entity);
 }
